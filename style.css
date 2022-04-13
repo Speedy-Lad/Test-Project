@@ -1,0 +1,41 @@
+:root {
+    --main-txt-color: red;
+    --main-acc-color: orange;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-txt-color);
+    display: inline-block;
+    padding: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+ul a:hover,  .button:hover {
+    background-color: var(--main-txt-color);
+    color: var(--main-acc-color);
+}
+
+.logo a {
+    padding: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    top: 0;
+    display: flex;
+    background-color: var(--main-acc-color);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.33);
+}
